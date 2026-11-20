@@ -56,9 +56,34 @@ a:hover {
     border: 2px solid #FFF;
 }
 
+a:focus-visible {
+    outline: 3px solid #FFF;
+    outline-offset: 4px;
+}
+
 section img {
     display: block;
     margin: 0 auto;
     width: 792px;
     height: 446px;
+}
+
+@media (max-width: 768px) {
+    p {
+        width: min(648px, calc(100% - 32px));
+        font-size: 20px;
+    }
+
+    header img {
+        margin: 65px 0 0 60px;
+    }
+
+    main {
+        padding-top: 24px;
+    }
+
+    section img {
+        width: min(648px, 100%);
+        height: auto;
+    }
 }
